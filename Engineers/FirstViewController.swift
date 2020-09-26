@@ -15,6 +15,7 @@ class FirstViewController: UIViewController {
         // Initialise data loading and styliing of background elements
         backgroundArea.layer.cornerRadius = 14
         secondBackgroundArea.layer.cornerRadius = 14
+        saveButton.layer.cornerRadius = 3
         loadData()
     }
     
@@ -33,7 +34,7 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var thirdSwitch: UISwitch!
     @IBOutlet weak var fourthSwitch: UISwitch!
     @IBOutlet weak var FifthSwitch: UISwitch!
-
+    @IBOutlet weak var saveButton: UIButton!
     
     // Functions
     /// Gather text field data input by patients
@@ -93,4 +94,10 @@ class FirstViewController: UIViewController {
     @IBAction func switchChanged(_ sender: UISwitch) {
         loadData()
     }
+    
+    @IBAction func savePressed(_ sender: UIButton) {
+        // do save
+    }
+    
+    
 }

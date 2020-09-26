@@ -17,38 +17,49 @@ class SecondViewController: UIViewController {
         
         // Styling
         textField.layer.cornerRadius = 7
+        assesButton.layer.cornerRadius = 3
         
     }
     
     // Functions
-    func assessWithML() {
+    func assessWithML() -> String {
         let userText = textField.text
         
         do { let mlModel = try
             engineersModel(configuration: MLModelConfiguration()).model
             let failurePredictor = try NLModel(mlModel: mlModel)
-            let test = failurePredictor.predictedLabel(for: userText!)
+            let predictionLabel = failurePredictor.predictedLabel(for: userText!)
             
-            print(test)
+            return predictionLabel!
+            
         } catch {
             // Things went wrong?
+            return ""
         }
+
     }
     
     // Connections
     @IBOutlet weak var textField: UITextView!
-    
-
+    @IBOutlet weak var predictionLabel: UILabel!
+    @IBOutlet weak var assesButton: UIButton!
     // Actions
     @IBAction func viewTapped(_ sender: UITapGestureRecognizer) {
         view.endEditing(true)
     }
     
     @IBAction func assessButton(_ sender: UIButton) {
-        assessWithML()
+        
+        if assessWithML() == "failure" {
+            predictionLabel.text = "You may have a hip failure. Consult your doctor."
+        } else {
+            predictionLabel.text = "We don't think you have a hip implant failure. Consult your doctor if symptoms persist."
+        }
+        
+
     }
     
-
+    
 
 }
 
