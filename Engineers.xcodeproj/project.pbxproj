@@ -15,6 +15,7 @@
 		52DD0A80251F10370079FEF6 /* Engineers.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 52DD0A7E251F10370079FEF6 /* Engineers.xcdatamodeld */; };
 		52DD0A82251F10380079FEF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52DD0A81251F10380079FEF6 /* Assets.xcassets */; };
 		52DD0A85251F10380079FEF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52DD0A83251F10380079FEF6 /* LaunchScreen.storyboard */; };
+		52DD0A8F251F49B50079FEF6 /* engineersModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 52DD0A8E251F49B50079FEF6 /* engineersModel.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		52DD0A81251F10380079FEF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52DD0A84251F10380079FEF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52DD0A86251F10380079FEF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52DD0A8E251F49B50079FEF6 /* engineersModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = engineersModel.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				52DD0A83251F10380079FEF6 /* LaunchScreen.storyboard */,
 				52DD0A86251F10380079FEF6 /* Info.plist */,
 				52DD0A7E251F10370079FEF6 /* Engineers.xcdatamodeld */,
+				52DD0A8E251F49B50079FEF6 /* engineersModel.mlmodel */,
 			);
 			path = Engineers;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 				52DD0A74251F10370079FEF6 /* AppDelegate.swift in Sources */,
 				52DD0A76251F10370079FEF6 /* SceneDelegate.swift in Sources */,
 				52DD0A80251F10370079FEF6 /* Engineers.xcdatamodeld in Sources */,
+				52DD0A8F251F49B50079FEF6 /* engineersModel.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
