@@ -63,8 +63,9 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="uLa-dt-mtZ">
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uLa-dt-mtZ">
                                                         <rect key="frame" x="309" y="0.0" width="51" height="31"/>
+                                                        <color key="onTintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <connections>
                                                             <action selector="switchChanged:" destination="9pv-A4-QxB" eventType="valueChanged" id="UbI-8n-LvG"/>
                                                         </connections>
@@ -94,6 +95,7 @@
                                                     </label>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Hob-xB-MYQ">
                                                         <rect key="frame" x="309" y="0.0" width="51" height="31"/>
+                                                        <color key="onTintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <connections>
                                                             <action selector="switchChanged:" destination="9pv-A4-QxB" eventType="valueChanged" id="zD2-ZA-7gY"/>
                                                         </connections>
@@ -123,6 +125,7 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="60" id="ucf-1S-jzR"/>
                                                         </constraints>
+                                                        <color key="onTintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <connections>
                                                             <action selector="switchChanged:" destination="9pv-A4-QxB" eventType="valueChanged" id="DcS-IY-3lD"/>
                                                         </connections>
@@ -152,6 +155,7 @@
                                                     </label>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="c7h-b2-yVg">
                                                         <rect key="frame" x="309" y="0.0" width="51" height="31"/>
+                                                        <color key="onTintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <connections>
                                                             <action selector="switchChanged:" destination="9pv-A4-QxB" eventType="valueChanged" id="gdp-OZ-FnN"/>
                                                         </connections>
@@ -181,6 +185,7 @@
                                                     </label>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="HRH-tr-bdG">
                                                         <rect key="frame" x="309" y="0.0" width="51" height="31"/>
+                                                        <color key="onTintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <connections>
                                                             <action selector="switchChanged:" destination="9pv-A4-QxB" eventType="valueChanged" id="S7E-83-ktS"/>
                                                         </connections>
@@ -295,32 +300,74 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
-                                <rect key="frame" x="106" y="426.5" width="202" height="43"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Incident Diag" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="ftN-yE-9DV">
+                                <rect key="frame" x="20" y="60" width="203" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
-                                <rect key="frame" x="99.5" y="477.5" width="215" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter worrying symptoms." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fiK-ap-SJe">
+                                <rect key="frame" x="20" y="111" width="203" height="18"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="report" translatesAutoresizingMaskIntoConstraints="NO" id="TPk-lc-Fq5">
+                                <rect key="frame" x="294" y="44" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Acb-cu-FXV"/>
+                                    <constraint firstAttribute="width" constant="100" id="IPJ-eY-Tf7"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Enter symptoms here..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fnL-E8-39H">
+                                <rect key="frame" x="20" y="164" width="374" height="150"/>
+                                <color key="backgroundColor" red="0.95294117647058818" green="0.78823529411764703" blue="0.70980392156862748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="HuI-7Y-jub"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="He2-Fh-63a">
+                                <rect key="frame" x="177" y="322" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="assessButton:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="tdE-dU-6Z3"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.97647058819999999" green="0.90980392160000001" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" symbolic="YES" id="Day-4N-Vmt"/>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="JgO-Fn-dHn"/>
-                            <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
-                            <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="TPk-lc-Fq5" secondAttribute="trailing" constant="20" id="5mH-Pe-ET3"/>
+                            <constraint firstItem="ftN-yE-9DV" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" constant="16" id="957-Ce-A4b"/>
+                            <constraint firstItem="fiK-ap-SJe" firstAttribute="top" secondItem="ftN-yE-9DV" secondAttribute="bottom" constant="8" symbolic="YES" id="IZX-uY-XnF"/>
+                            <constraint firstItem="ftN-yE-9DV" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="20" id="TPe-5i-NQq"/>
+                            <constraint firstItem="fiK-ap-SJe" firstAttribute="centerX" secondItem="ftN-yE-9DV" secondAttribute="centerX" id="aaP-XR-9iL"/>
+                            <constraint firstItem="TPk-lc-Fq5" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" id="cGH-7G-k9M"/>
+                            <constraint firstItem="fnL-E8-39H" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="20" id="l60-Nb-mAA"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="fnL-E8-39H" secondAttribute="trailing" constant="20" id="mfw-0U-CYB"/>
+                            <constraint firstItem="fiK-ap-SJe" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="20" id="qjo-CX-8dz"/>
+                            <constraint firstItem="fnL-E8-39H" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" constant="120" id="yWB-xa-zl6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="nZg-qk-Moo" appends="YES" id="UoE-r5-rpj"/>
+                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Incident Reporting" selectedImage="report" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="textField" destination="fnL-E8-39H" id="SZx-v7-9iU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="nZg-qk-Moo">
+                    <connections>
+                        <action selector="viewTapped:" destination="8rJ-Kc-sve" id="fnY-It-nKj"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="750" y="360"/>
+            <point key="canvasLocation" x="749.27536231884062" y="359.59821428571428"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">

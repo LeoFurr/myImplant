@@ -14,22 +14,39 @@ class SecondViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        do { let mlModel = try engineersModel(configuration: MLModelConfiguration()).model
-            
-            let sentimentPredictor = try NLModel(mlModel: mlModel)
-            
-            let test = sentimentPredictor.predictedLabel(for: "my back hurts")
-            
-            print(test)
-            
-        } catch {
-        }
-    
+        
+        // Styling
+        textField.layer.cornerRadius = 7
         
     }
+    
+    // Functions
+    func assessWithML() {
+        let userText = textField.text
+        
+        do { let mlModel = try
+            engineersModel(configuration: MLModelConfiguration()).model
+            let failurePredictor = try NLModel(mlModel: mlModel)
+            let test = failurePredictor.predictedLabel(for: userText!)
+            
+            print(test)
+        } catch {
+            // Things went wrong?
+        }
+    }
+    
+    // Connections
+    @IBOutlet weak var textField: UITextView!
+    
 
-
+    // Actions
+    @IBAction func viewTapped(_ sender: UITapGestureRecognizer) {
+        view.endEditing(true)
+    }
+    
+    @IBAction func assessButton(_ sender: UIButton) {
+        assessWithML()
+    }
     
 
 
